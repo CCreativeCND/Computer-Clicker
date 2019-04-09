@@ -87,3 +87,20 @@ Achievements
   name:Wow! Ten whole clicks!
   desc:You've clicked the button 10 times. Well done. Well done indeed.
   req:10 makeComputer:clicks
+Shinies
+	*hacker
+		on click:log Hacker Used
+		movement:onRight moveLeft fade bounce:0.05
+		frequency:1800
+		frequency variation:5400
+		icon:https://raw.githubusercontent.com/CCreativeCND/Computer-Clicker/master/hacker.png
+		class:bigButton
+		on click:
+			$boost=1
+			if (chance(25%))
+				//get at least 7, or between 1 and 3 minutes
+				$amount=max(7,random(computers:ps*60*1,computers:ps*60*3))*$boost
+				toast The hacker grants you<//><b>[$amount] computers</b>.
+				yield $amount bunnies
+			end
+		end
