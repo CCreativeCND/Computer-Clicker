@@ -45,6 +45,8 @@ Buttons
   tooltip origin:bottom
   no text
 Buildings
+*TEMPLATE
+  on click:anim glow
 *factory
   name:Factory
   desc:Makes computers with machines.
@@ -74,6 +76,8 @@ Buildings
   cost increase:115%
   req:25 manufacturingPlant
 Upgrades
+*TEMPLATE
+  on click:anim glow
 *click2
   name:Double the amount of computers per click
   passive:multiply yield of makeComputer by 2
@@ -83,10 +87,16 @@ Upgrades
   passive:multiply yield of factory by 3
   cost:300 computers
 Achievements
+*TEMPLATE
+  on click:anim glow
 *10clicks
   name:Wow! Ten whole clicks!
   desc:You've clicked the button 10 times. Well done. Well done indeed.
   req:10 makeComputer:clicks
+*hacker
+  name:Hacked
+  desc:You met the hacker!
+  req:1 hacker:clicks
 Shinies
 	*hacker
 		on click:log Hacker Used
@@ -101,6 +111,10 @@ Shinies
 				//get at least 7, or between 1 and 3 minutes
 				$amount=max(7,random(computers:ps*60*1,computers:ps*60*3))*$boost
 				toast The hacker grants you<//><b>[$amount] computers</b>.
-				yield $amount bunnies
+				yield $amount computers
 			end
+			else
+				$amount=1*$boost
+				toast The hacker grants you<//><b>[$amount] computer[s?$amount]</b>!
+				yield $amount computers
 		end
