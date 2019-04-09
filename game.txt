@@ -40,7 +40,7 @@ Buttons
   desc:Make a computer.
   on click:yield 1 computers
   on click:anim icon wobble
-  icon:
+  icon:https://github.com/CCreativeCND/Computer-Clicker/blob/master/computer.png
   class:bigButton
   icon class:shadowed
   tooltip origin:bottom
