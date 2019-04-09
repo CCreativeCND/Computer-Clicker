@@ -44,6 +44,7 @@ Buttons
   class:bigButton
   icon class:shadowed
   tooltip origin:bottom
+  no text
 Buildings
 *factory
   name:Factory
