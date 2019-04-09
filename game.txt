@@ -5,3 +5,5 @@ Let's make a game!
 	created:8/4/2019
 	updated:8/4/2019
 	version:1
+Settings
+	background:bj.jpg
