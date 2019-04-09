@@ -52,7 +52,7 @@ Buildings
   on tick:yield 5 computers
   cost:100 computers
   cost increase:110%
-  req:10 makeComputer:cicks
+  req:100 makeComputer:clicks
 *manufacturingPlant
   name:Manufacturing Plant
   desc:Makes even more computers with machines.
