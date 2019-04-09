@@ -36,8 +36,7 @@ Resources
   desc:This is what you make
 Buttons
 *makeComputer
-  name:Make Computer
-  desc:Make a computer.
+  name:Make a Computer!
   on click:yield 1 computers
   on click:anim icon wobble
   icon:https://raw.githubusercontent.com/CCreativeCND/Computer-Clicker/master/computer.png
