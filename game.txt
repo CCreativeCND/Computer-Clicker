@@ -36,9 +36,14 @@ Resources
   desc:This is what you make
 Buttons
 *makeComputer
-  name:<t>Make Computer</t>
+  name:Make Computer
   desc:Make a computer.
   on click:yield 1 computers
+  on click:anim icon wobble
+  icon:
+  class:bigButton
+  icon class:shadowed
+  tooltip origin:bottom
 Buildings
 *factory
   name:Factory
