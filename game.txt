@@ -93,7 +93,7 @@ Achievements
   name:Wow! Ten whole clicks!
   desc:You've clicked the button 10 times. Well done. Well done indeed.
   req:10 makeComputer:clicks
-*hacker
+*hacked
   name:Hacked
   desc:You met the hacker!
   req:1 hacker:clicks
