@@ -12,17 +12,17 @@ Settings
 	stylesheet:stuff/bigBlue.css
 Layout
 *main
-  contains:res, buttons
+  contains:buttons, res
+  *buttons
+    contains:Buttons
   *res
     header:Resources
     contains:Resources
     class:fullWidth
-  *buttons
-    contains:Buttons
 *store
   contains:buildings, upgrades
   *buildings
-    contains:BulkDisplay, Buildings
+    contains:Buildings
     header:Buildings
     tooltip origin:left
   *upgrades
@@ -36,7 +36,7 @@ Resources
   desc:This is what you make
 Buttons
 *makeComputer
-  name:Make Computer
+  name:<t>Make Computer</t>
   desc:Make a computer.
   on click:yield 1 computers
 Buildings
@@ -55,3 +55,8 @@ Upgrades
   name:3x speed for Factories
   passive:multiply yield of factory by 3
   cost:300 computers
+Achievements
+*10clicks
+  name:Wow! Ten whole clicks!
+  desc:You've clicked the button 10 times. Well done. Well done indeed.
+  req:10 makeComputer:clicks
