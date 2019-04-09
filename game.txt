@@ -6,4 +6,4 @@ Let's make a game!
 	updated:8/4/2019
 	version:1
 Settings
-	background:bj.jpg
+	background:bg.jpg
