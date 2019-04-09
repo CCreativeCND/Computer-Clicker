@@ -1,0 +1,7 @@
+Let's make a game!
+	name:Computer Clicker
+	by:CCreativeCND
+	desc:This is a simple idle game
+	created:8/4/2019
+	updated:8/4/2019
+	version:1
