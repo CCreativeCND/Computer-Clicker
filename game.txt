@@ -7,3 +7,51 @@ Let's make a game!
 	version:1
 Settings
 	background:https://raw.githubusercontent.com/CCreativeCND/Computer-Clicker/master/bg.jpg
+	building cost increase:115%
+	building cost refund:50%
+	stylesheet:stuff/bigBlue.css
+Layout
+*main
+  contains:res, buttons
+  *res
+    header:Resources
+    contains:Resources
+    class:fullWidth
+  *buttons
+    contains:Buttons
+*store
+  contains:buildings, upgrades
+  *buildings
+    contains:BulkDisplay, Buildings
+    header:Buildings
+    tooltip origin:left
+  *upgrades
+    contains:Upgrades
+    header:Upgrades
+    costs:hide
+    names:hide
+Resources
+*computer
+  name:Computer
+  desc:This is what you make
+Buttons
+*makeComputer
+  name:Make Computer
+  desc:Make a computer.
+  on click:yield 1 computer
+Buildings
+*factory
+  name:Factory
+  desc:Makes computers with machines.
+  on tick:yield 5 computer
+  cost:100 computer
+  cost increase:110%
+Upgrades
+*click2
+  name:Double the amount of computers per click
+  passive:multiply yield of makeComputer by 2
+  cost:200 computer
+*factorySpeed3
+  name:3x speed for Factories
+  passive:multiply yield of factory by 3
+  cost:300 computer
