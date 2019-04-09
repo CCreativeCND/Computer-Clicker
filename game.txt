@@ -31,27 +31,27 @@ Layout
     costs:hide
     names:hide
 Resources
-*computer
-  name:Computer
+*computers
+  name:Computers
   desc:This is what you make
 Buttons
 *makeComputer
   name:Make Computer
   desc:Make a computer.
-  on click:yield 1 computer
+  on click:yield 1 computers
 Buildings
 *factory
   name:Factory
   desc:Makes computers with machines.
-  on tick:yield 5 computer
-  cost:100 computer
+  on tick:yield 5 computers
+  cost:100 computers
   cost increase:110%
 Upgrades
 *click2
   name:Double the amount of computers per click
   passive:multiply yield of makeComputer by 2
-  cost:200 computer
+  cost:200 computers
 *factorySpeed3
   name:3x speed for Factories
   passive:multiply yield of factory by 3
-  cost:300 computer
+  cost:300 computers
