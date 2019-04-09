@@ -89,10 +89,24 @@ Upgrades
 Achievements
 *TEMPLATE
   on click:anim glow
+// Click Achievements
+*1click
+  name:*click*
+  desc:You're off to a good start!
+  req:1 makeComputer:clicks
 *10clicks
   name:Wow! Ten whole clicks!
   desc:You've clicked the button 10 times. Well done. Well done indeed.
   req:10 makeComputer:clicks
+*100clicks
+  name:You're on a roll!
+  desc:You've clicked the button 100 times.
+  req:100 makeComputer:clicks
+*1000clicks
+  name:Wow!
+  desc:You've clicked the button 1000 times.
+  req:1000 makeComputer:clicks
+// Special Achievements
 *hacked
   name:Hacked
   desc:You met the hacker!
