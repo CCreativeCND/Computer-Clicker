@@ -52,6 +52,24 @@ Buildings
   on tick:yield 5 computers
   cost:100 computers
   cost increase:110%
+*manufacturingPlant
+  name:Manufacturing Plant
+  desc:Makes even more computers with machines.
+  on tick:yield 10 computers
+  cost:500 computers
+  cost increase:115%
+*industrialSite
+  name:Industrial Site
+  desc:A huge place to make computers.
+  on tick:yield 10 computers
+  cost:1000 computers
+  cost increase:115%
+*industrialComplex
+  name:Industrial Site
+  desc:Many industrial sites.
+  on tick:yield 50 computers
+  cost:2500 computers
+  cost increase:115%
 Upgrades
 *click2
   name:Double the amount of computers per click
