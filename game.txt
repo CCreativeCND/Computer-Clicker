@@ -79,7 +79,7 @@ Buildings
   on tick:yield 50 computers
   cost:2500 computers
   cost increase:115%
-  req:25 manufacturingPlant
+  req:25 industrialSite
   icon:buildings[3,0]
 Upgrades
 *TEMPLATE
