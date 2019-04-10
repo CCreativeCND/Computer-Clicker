@@ -124,6 +124,11 @@ Achievements
   name:Wow!
   desc:You've clicked the button 1000 times.
   req:1000 makeComputer:clicks
+// Building Achievements
+*100factories
+  name:Whole Lotta Factories
+  desc:You made 100 factories!
+  req:100 factory
 // Special Achievements
 *hacked
   name:Hacked
