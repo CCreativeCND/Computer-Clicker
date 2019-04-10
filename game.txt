@@ -90,17 +90,20 @@ Upgrades
   passive:multiply yield of makeComputer by 2
   cost:200 computers
   icon:upgrades[0,0]
+  req:500 computers:earned
 *click4
   name:Quadrouple the amount of computers per click
   passive:multiply yield of makeComputer by 4
   cost:1000 computers
   icon:upgrades[1,0]
+  req:1500 computers:earned
 //Factory
 *factorySpeed3
   name:3x speed for Factories
   passive:multiply yield of factory by 3
   cost:300 computers
   icon:upgrades[2,0]
+  req:10 factory
 Achievements
 *TEMPLATE
   on click:anim glow
