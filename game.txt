@@ -10,7 +10,8 @@ Settings
 	building cost increase:115%
 	building cost refund:50%
 	stylesheet:stuff/bigBlue.css
-	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/CCreativeCND/Computer-Clicker/master/spritesheet.png
+	spritesheet:upgrades, 48 by 48, https://raw.githubusercontent.com/CCreativeCND/Computer-Clicker/master/upgrades.png
+	spritesheet:buildings, 48 by 48, https://raw.githubusercontent.com/CCreativeCND/Computer-Clicker/master/buildings.png
 Layout
 *main
   contains:buttons, res
@@ -84,12 +85,12 @@ Upgrades
   name:Double the amount of computers per click
   passive:multiply yield of makeComputer by 2
   cost:200 computers
-  icon:icons[0,0]
+  icon:upgrades[0,0]
 *click4
   name:Quadrouple the amount of computers per click
   passive:multiply yield of makeComputer by 4
   cost:1000 computers
-  icon:icons[1,0]
+  icon:upgrades[1,0]
 //Factory
 *factorySpeed3
   name:3x speed for Factories
