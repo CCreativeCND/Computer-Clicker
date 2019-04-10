@@ -56,6 +56,7 @@ Buildings
   cost:100 computers
   cost increase:110%
   req:100 makeComputer:clicks
+  icon:buildings[0,0]
 *manufacturingPlant
   name:Manufacturing Plant
   desc:Makes even more computers with machines.
@@ -63,6 +64,7 @@ Buildings
   cost:500 computers
   cost increase:115%
   req:5 factory
+  icon:buildings[1,0]
 *industrialSite
   name:Industrial Site
   desc:A huge place to make computers.
@@ -70,6 +72,7 @@ Buildings
   cost:1000 computers
   cost increase:115%
   req:10 manufacturingPlant
+  icon:buildings[2,0]
 *industrialComplex
   name:Industrial Site
   desc:Many industrial sites.
@@ -77,6 +80,7 @@ Buildings
   cost:2500 computers
   cost increase:115%
   req:25 manufacturingPlant
+  icon:buildings[3,0]
 Upgrades
 *TEMPLATE
   on click:anim glow
@@ -96,6 +100,7 @@ Upgrades
   name:3x speed for Factories
   passive:multiply yield of factory by 3
   cost:300 computers
+  icon:upgrades[2,0]
 Achievements
 *TEMPLATE
   on click:anim glow
